@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Ventas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #333;
+            color: white;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            text-align: center;
+            margin-top: -50px; /* Subir un poco más el texto */
+        }
+
+        .pricing-table {
+            display: flex;
+            gap: 20px;
+        }
+
+        .pricing-plan {
+            color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            width: 250px;
+            position: relative;
+        }
+
+        .pricing-plan:hover {
+            transform: scale(1.1);
+        }
+
+        .plan-header {
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px 10px 10px 10px; /* Curvar también las esquinas inferiores */
+            position: absolute;
+            top: -20px; /* Ajustar para sobresalir 20px hacia arriba */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            background-color: #fff; /* Color blanco */
+            color: #333;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .plan-header::after {
+            content: "";
+            display: block;
+            height: 30px; /* Ajustar para sobresalir 30px hacia abajo */
+            margin-top: -10px; /* Ajuste visual */
+        }
+
+        .pricing-plan.blue {
+            background-color: #4a90e2;
+        }
+
+        .pricing-plan.cyan {
+            background-color: #00bcd4;
+        }
+
+        .pricing-plan.red {
+            background-color: #ec5673;
+        }
+
+        .plan-price {
+            font-size: 36px;
+            margin-bottom: 20px;
+            margin-top: 50px; /* Ajustado para el espacio del encabezado */
+        }
+
+        .plan-details {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+
+        .plan-details li {
+            margin: 10px 0;
+        }
+
+        .plan-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .plan-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elige tu sueldo plan de sitio web mensual</h1>
+    <div class="pricing-table">
+        <div class="pricing-plan blue">
+            <div class="plan-header">Inicio de cinco páginas</div>
+            <div class="plan-price">$29</div>
+            <ul class="plan-details">
+                <li>1 usuario completo</li>
+                <li>1000 vistas previas de correo electrónico</li>
+                <li>5 contactos por cliente</li>
+                <li>5 tazas de café</li>
+            </ul>
+            <a href="#" class="plan-button">COMPRAR AHORA</a>
+        </div>
+
+        <div class="pricing-plan cyan">
+            <div class="plan-header">Negocio de 10 páginas</div>
+            <div class="plan-price">$59</div>
+            <ul class="plan-details">
+                <li>10 usuarios completos</li>
+                <li>2000 vistas previas de correo electrónico</li>
+                <li>5 contactos por cliente</li>
+                <li>10 tazas de café</li>
+            </ul>
+            <a href="#" class="plan-button">COMPRAR AHORA</a>
+        </div>
+
+        <div class="pricing-plan red">
+            <div class="plan-header">Inicio de comercio electrónico</div>
+            <div class="plan-price">$119</div>
+            <ul class="plan-details">
+                <li>1 usuario completo</li>
+                <li>3000 vistas previas de correo electrónico</li>
+                <li>5 contactos por cliente</li>
+                <li>15 tazas de café</li>
+            </ul>
+            <a href="#" class="plan-button">COMPRAR AHORA</a>
+        </div>
+    </div>
+</body>
+</html>
